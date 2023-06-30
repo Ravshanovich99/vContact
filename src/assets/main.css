@@ -1,0 +1,74 @@
+@import "./base.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+main {
+  padding: 2rem 8rem;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+.text-default {
+  color: var(--color-text);
+}
+
+.label {
+  background: var(--color-background);
+}
+
+.btn {
+  background-color: var(--color-background-mute);
+  color: var(--color-text);
+}
+
+.bg-modal {
+  background-color: var(--color-background);
+}
+
+.responsive-width {
+  width: 60%;
+}
+
+.card {
+  background-color: var(--color-background-soft);
+}
+
+.toast {
+  background-color: var(--color-background-soft);
+  transition: 0.4s;
+}
+
+.custom-bg {
+  background-color: var(--custom-bg);
+}
+
+@media (max-width: 556px) {
+  main {
+    padding: 2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .responsive-width {
+    width: 80%;
+  }
+}
